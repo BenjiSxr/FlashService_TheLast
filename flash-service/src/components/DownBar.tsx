@@ -1,13 +1,32 @@
 import { FC } from "react";
 import { NavButton } from "./NavButton";
+import home from "@/image/maison-web.png";
+import donate from "@/image/coeur.png";
+import add from "@/image/plus.png";
+import gens from "@/image/deplacer.png";
 
 const DownBar: FC = () => {
   return (
-    <div className="w-screen bg-blue-800 min-h-12 max-h-16 flex justify-center items-center">
-      <NavButton label="Change" link="change"></NavButton>
-      <NavButton label="Home" link="change"></NavButton>
-      <NavButton label="Liked" link="liked"></NavButton>
-      <NavButton label="Create" link="change"></NavButton>
+    <div className="w-screen bg-slate-800 min-h-12 max-h-16 flex justify-center items-center">
+      <NavButton
+        label="Donation"
+        link="donate"
+        icone={donate}
+        select={false}
+      ></NavButton>
+      <NavButton label="Accueil" link="" icone={home} select={true}></NavButton>
+      <NavButton
+        label="En Cours"
+        link="liked"
+        icone={gens}
+        select={false}
+      ></NavButton>
+      <NavButton
+        label="Demander"
+        link="new-service"
+        icone={add}
+        select={false}
+      ></NavButton>
     </div>
   );
 };
