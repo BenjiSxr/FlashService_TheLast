@@ -1,9 +1,9 @@
 import { FC } from "react";
 import { NavButton } from "./NavButton";
 import home from "@/image/maison-web.png";
-import donate from "@/image/coeur.png";
-import add from "@/image/plus.png";
-import gens from "@/image/deplacer.png";
+import donate from "@/image/coeur_orange.png";
+import add from "@/image/plus_orange.png";
+import gens from "@/image/deplacer_orange.png";
 
 const DownBar: FC = () => {
   return (
