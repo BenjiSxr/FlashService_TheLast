@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen overflow-hidden flex flex-col justify-between`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen overflow-scroll flex flex-col justify-between`}
       >
         <HighBar></HighBar>
         {children}

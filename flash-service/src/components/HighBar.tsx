@@ -5,7 +5,7 @@ import { ProfileImg } from "./ProfileImg";
 
 const HighBar: FC = () => {
   return (
-    <div className="w-screen bg-slate-900 min-h-10 max-h-14 flex justify-between items-center">
+    <div className="w-screen bg-slate-900 max-h-14 flex justify-between items-center">
       <FlashPoint point="1800"></FlashPoint>
       <h1 className="text-amber-500 text-xl font-bold">FlashService</h1>
       <div className="m-5">
