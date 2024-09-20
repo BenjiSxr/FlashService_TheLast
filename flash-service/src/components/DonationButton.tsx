@@ -1,8 +1,13 @@
 "use client";
 import { FC, useState } from "react";
 import Image from 'next/image';
+import { FlashPoint } from "./FlashPoint";
 
 const DonationButton: FC = () => {
+    //Point du profil
+    const [fPoint, setFPoint] = useState(1800);
+    const [donationAmount, setDonationAmount] = useState(0);
+
     // popUp pour le don 
     const [isDonOpen, setIsDonOpen] = useState(false);
 
@@ -11,8 +16,14 @@ const DonationButton: FC = () => {
     };
 
     const closeDon = () => {
+        const newFPoint = fPoint - donationAmount;
+        console.log(`Montant donné : ${donationAmount}`);
+        console.log(`Flash Points restants : ${newFPoint}`);
+        setFPoint(newFPoint);
         setIsDonOpen(false);
     };
+
+
 
     return (
         <>
@@ -43,6 +54,13 @@ const DonationButton: FC = () => {
                             Votre soutien est précieux pour nous ! Merci de votre générosité.
                         </p>
 
+                        <div>
+                            <label className="block text-sm font-medium text-gray-700">
+                                Vos Flash Point :
+                            </label>
+                            <FlashPoint point={fPoint.toString()} />
+                        </div>
+
                         <div className="mb-4">
                             <label htmlFor="donationAmount" className="block text-sm font-medium text-gray-700">
                                 Montant à donner (Flash Point) :
@@ -51,7 +69,10 @@ const DonationButton: FC = () => {
                                 id="donationAmount"
                                 type="number"
                                 min="0"
+                                max={fPoint}
                                 step="10"
+                                value={donationAmount}
+                                onChange={(e) => setDonationAmount(Number(e.target.value))}
                                 className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                             />
                         </div>

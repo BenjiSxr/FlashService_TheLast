@@ -17,7 +17,7 @@ const InfoButton = () => {
             <button onClick={togglePopup} className="flex items-center justify-center w-8 h-8 bg-slate-400 rounded-full">
                 <Image
                     src="/images/information.png"
-                    alt="Flash Point"
+                    alt="Information"
                     width={40}
                     height={40}
                     className="text-gray-700" />
