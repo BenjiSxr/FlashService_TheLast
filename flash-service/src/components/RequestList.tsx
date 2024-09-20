@@ -1,4 +1,4 @@
-"use client";  // Indique que ce composant est un Client Component
+"use client";
 
 import { FC, useState } from "react";
 
@@ -35,7 +35,7 @@ const RequestList: FC<RequestListProps> = ({ label, count, total, itemLabel, req
             {/* Liste des requêtes */}
             <div className="space-y-2">
                 {requests.map((request, index) => (
-                    <div key={index} className="border p-3 rounded-md">
+                    <div key={index} className="border p-3 rounded-md   ">
                         {/* Bande avec le label de la requête/service et la flèche */}
                         <div
                             className="flex justify-between items-center cursor-pointer"
