@@ -7,7 +7,7 @@ type IProps = {
 const Button: FC<IProps> = (props) => {
   const { label } = props;
   return (
-    <button className="bg-slate-900 text-amber-500 p-2 rounded-lg">
+    <button className="bg-principale-700 text-secondaire-500 p-2 rounded-lg">
       {label}
     </button>
   );
