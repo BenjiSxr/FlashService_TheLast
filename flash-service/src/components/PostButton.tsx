@@ -4,7 +4,7 @@ type IProps = {
   label: string;
 };
 
-const Button: FC<IProps> = (props) => {
+const PostButton: FC<IProps> = (props) => {
   const { label } = props;
   return (
     <button className="bg-principale-700 text-secondaire-500 p-2 rounded-lg">
@@ -13,4 +13,4 @@ const Button: FC<IProps> = (props) => {
   );
 };
 
-export { Button };
+export { PostButton };

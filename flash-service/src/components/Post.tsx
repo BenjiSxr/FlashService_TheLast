@@ -3,7 +3,8 @@ import { ProfileImg } from "./ProfileImg";
 import profile from "@/image/femme_profile.jpg";
 import { Stars } from "./Stars";
 import { PostImage } from "./PostImage";
-import { Button } from "./Button";
+import { PostButton } from "./PostButton";
+import { PostFlashPoint } from "./PostFlashPoint";
 const Post: FC = () => {
   return (
     <div className="h-full min-h-[500px] border-black border-2 rounded-xl w-5/6 max-w-[500px]">
@@ -28,8 +29,8 @@ const Post: FC = () => {
           </p>
         </div>
         <div className="flex justify-between items-center m-1">
-          <Button label="+18 pts"></Button>
-          <Button label="Accept Job"></Button>
+          <PostFlashPoint point="18"></PostFlashPoint>
+          <PostButton label="Accept Job"></PostButton>
         </div>
       </div>
     </div>
