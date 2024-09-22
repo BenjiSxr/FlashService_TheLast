@@ -3,6 +3,7 @@ import { ProfileImg } from "./ProfileImg";
 import profile from "@/image/femme_profile.jpg";
 import { Stars } from "./Stars";
 import { PostImage } from "./PostImage";
+import { Button } from "./Button";
 const Post: FC = () => {
   return (
     <div className="h-full min-h-[500px] border-black border-2 rounded-xl w-5/6 max-w-[500px]">
@@ -27,12 +28,8 @@ const Post: FC = () => {
           </p>
         </div>
         <div className="flex justify-between items-center m-1">
-          <button className="bg-slate-900 text-amber-500 p-2 rounded-lg">
-            +18 pts
-          </button>
-          <button className="bg-slate-900 text-amber-500 p-2 rounded-lg">
-            Accept Job
-          </button>
+          <Button label="+18 pts"></Button>
+          <Button label="Accept Job"></Button>
         </div>
       </div>
     </div>

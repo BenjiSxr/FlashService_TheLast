@@ -15,8 +15,8 @@ const NavButton: FC<IProps> = (props) => {
     <div
       className={
         select
-          ? " text-black bg-amber-500 w-screen min-h-10 max-h-14 flex justify-center items-center p-2"
-          : " bg-slate-900 text-amber-500 w-screen min-h-10 max-h-14 flex justify-center items-center p-2"
+          ? " text-black bg-secondaire-500 w-screen max-h-16 flex justify-center items-center p-2"
+          : " bg-principale-700 text-secondaire-500 w-screen max-h-16 flex justify-center items-center p-2"
       }
     >
       <Link className="w-full" href={`/${link}`}>
@@ -26,7 +26,7 @@ const NavButton: FC<IProps> = (props) => {
             alt="icone"
             width={30}
             height={30}
-            className="text-amber-500"
+            className="text-secondaire-500"
           />
           <p className="text-xs">{label}</p>
         </button>

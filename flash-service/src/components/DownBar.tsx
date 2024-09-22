@@ -7,7 +7,7 @@ import gens from "@/image/deplacer_orange.png";
 
 const DownBar: FC = () => {
   return (
-    <div className="w-full bg-slate-800 h-14 flex justify-center items-center">
+    <div className="w-screen bg-principale-700 max-h-15 flex justify-center items-center">
       <NavButton
         label="Donation"
         link="donate"

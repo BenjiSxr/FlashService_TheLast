@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { DownBar } from "@/components/DownBar";
 import { HighBar } from "@/components/HighBar";
+import { AuthProvider } from "@/context/UserContext";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,11 +29,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen overflow-scroll flex flex-col justify-between`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen overflow-y-scroll flex flex-col justify-between`}
       >
-        <HighBar></HighBar>
-        {children}
-        <DownBar></DownBar>
+        <AuthProvider>
+          <HighBar></HighBar>
+          {children}
+          <DownBar></DownBar>
+        </AuthProvider>
       </body>
     </html>
   );
