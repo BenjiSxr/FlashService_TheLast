@@ -5,8 +5,7 @@ import CreateNewService from "../../components/CreateNewService";
 
 export default function NewService() {
     return (
-        <div className="h-full bg-gray-100 py-10 px-5">
-            <h1 className="text-2xl font-bold text-center mb-8">Créer un nouveau service</h1>
+        <div className="h-full flex flex-col justify-center items-center bg-gray-100 px-5">
             <CreateNewService />
         </div>
     );

@@ -67,7 +67,8 @@ const NewService: React.FC = () => {
 
     return (
         <>
-            <form onSubmit={handleSubmit} className="max-w-sm mx-auto pb-2 pt-4 pl-4 pr-4 bg-white shadow-md rounded-md">
+            <h1 className="w-full text-2xl font-bold text-center mb-8">Créer un nouveau service</h1>
+            <form onSubmit={handleSubmit} className="w-full mx-auto pb-2 pt-4 pl-4 pr-4 bg-white shadow-md rounded-md">
                 <div className="flex items-center justify-center w-90 mb-4">
                     <label
                         htmlFor="dropzone-file"
