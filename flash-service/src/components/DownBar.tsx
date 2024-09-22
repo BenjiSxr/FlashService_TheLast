@@ -10,7 +10,7 @@ const DownBar: FC = () => {
     <div className="w-screen bg-principale-700 max-h-15 flex justify-center items-center">
       <NavButton
         label="Donation"
-        link="donate"
+        link="donation"
         icone={donate}
         select={false}
       ></NavButton>
