@@ -28,7 +28,7 @@ const DonationButton: FC = () => {
     return (
         <>
             <button
-                className="flex justify-center items-center bg-slate-900 text-amber-500 border-2 border-amber-200 px-4 rounded-lg min-w-fit h-8 mx-1 font-bold"
+                className="flex justify-center items-center bg-principale-700 text-secondaire-500 border-2 border-amber-200 px-4 rounded-lg min-w-fit h-8 mx-1 font-semibold"
                 onClick={openDon}
             >
                 Je soutiens

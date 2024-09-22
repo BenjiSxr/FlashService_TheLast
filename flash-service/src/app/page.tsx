@@ -12,7 +12,7 @@ export default function Home() {
   }
 
   return (
-    <div className="flex items-center w-full h-full flex-col bg-gray-50">
+    <div className="flex items-center w-full h-full flex-col bg-gray-100">
       <div className="flex justify-center items-center w-full h-5/6 py-5 ">
         <Post></Post>
       </div>

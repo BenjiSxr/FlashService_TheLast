@@ -25,7 +25,7 @@ const RequestList: FC<RequestListProps> = ({ label, count, total, itemLabel, req
     };
 
     return (
-        <div className="w-full p-4 border rounded-md">
+        <div className="w-full my-3 p-4 border rounded-md bg-white">
             {/* Header avec le label et le compteur */}
             <div className="flex justify-between items-center mb-4">
                 <span className="text-lg font-semibold">{label}</span>
@@ -43,10 +43,10 @@ const RequestList: FC<RequestListProps> = ({ label, count, total, itemLabel, req
                         >
                             <span className="font-medium">{`${itemLabel} ${index + 1}`}</span>
                             <button
-                                className={`transform transition-transform ${openIndex === index ? "rotate-180" : ""
+                                className={`transform transition-transform duration-300 ${openIndex === index ? "rotate-180" : ""
                                     }`}
                             >
-                                ⬇
+                                ▼
                             </button>
                         </div>
 

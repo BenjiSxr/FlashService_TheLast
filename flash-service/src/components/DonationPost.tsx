@@ -27,7 +27,7 @@ const DonationPost: FC<IProps> = (props) => {
   }, [current_fp, total_fp]);
 
   return (
-    <div className="flex flex-col justify-center items-center border-black border-2 rounded-md ">
+    <div className="flex flex-col justify-center items-center border-black border-2 rounded-md bg-white">
       <div className="flex flex-col justify-center items-center w-[100%] h-[100%] p-2 max-w-96 overflow-hidden">
         <img className="rounded" src={imageURL} alt="Photo Association" />
       </div>

@@ -17,7 +17,7 @@ export default function Liked() {
   ];
 
   return (
-    <div className="p-6 space-y-8">
+    <div className=" h-full px-5 flex flex-col justify-center items-center bg-gray-100">
       <RequestList
         label="Liste des demandes"
         count={demandes.length}
