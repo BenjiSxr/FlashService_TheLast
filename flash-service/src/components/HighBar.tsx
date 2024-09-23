@@ -6,13 +6,15 @@ import profile from "@/image/test.jpg";
 import { ProfileImg } from "./ProfileImg";
 import Link from "next/link";
 import { useAuth } from "@/context/UserContext";
+import { useFlash } from "@/context/FlashContext";
 
 const HighBar: FC = () => {
   const { user } = useAuth();
+  const { fp } = useFlash();
   return (
     <div className="w-screen bg-principale-700 max-h-14 flex justify-between items-center">
       <div className="m-2 w-1/6 min-w-20">
-        <FlashPoint point="1800"></FlashPoint>
+        <FlashPoint point={`${fp}`}></FlashPoint>
       </div>
       <h1 className="text-secondaire-500 text-xl font-bold">FlashService</h1>
       <div className="m-2 w-1/6 flex justify-center">
