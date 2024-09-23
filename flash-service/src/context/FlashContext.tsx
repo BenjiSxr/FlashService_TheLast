@@ -4,7 +4,7 @@ import { createContext, ReactNode, useContext, useState } from "react";
 
 type test = {
   fp: number;
-  setFp: () => void;
+  setFp: (number: number) => void;
 };
 
 const authContextDefaultValues: test = {
