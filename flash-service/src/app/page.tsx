@@ -9,9 +9,9 @@ import { useState } from "react";
 
 export default function Home() {
   const { user } = useAuth();
-  if (user.id === 0) {
-    redirect("/connexion");
-  }
+  // if (user.id === 0) {
+  //   redirect("/connexion");
+  // }
 
   const [postIndex, setPostIndex] = useState(0);
   const posts = [
@@ -52,7 +52,7 @@ export default function Home() {
           }}
           animate={controls}
         >
-          <Post></Post>
+          <Post user="Sarah" title="test" desc="test long"></Post>
         </motion.div>
       </div>
       <div className="flex justify-evenly items-center w-full h-18">

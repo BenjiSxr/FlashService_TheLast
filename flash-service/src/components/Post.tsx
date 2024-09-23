@@ -4,7 +4,17 @@ import profile from "@/image/femme_profile.jpg";
 import { Stars } from "./Stars";
 import { PostImage } from "./PostImage";
 import { PostFlashPoint } from "./PostFlashPoint";
-const Post: FC = () => {
+
+type IProps = {
+  user: string,
+  title: string,
+  desc: string
+}
+
+
+const Post: FC<IProps> = (props) => {
+  const { user, title, desc } = props
+
   return (
     <div className="h-full min-h-[500px] border-black border-2 rounded-xl w-5/6 max-w-[500px]">
       <PostImage />
@@ -14,16 +24,16 @@ const Post: FC = () => {
             <ProfileImg img={profile} width={50} height={50} />
           </div>
           <div>
-            <p className="font-bold text-xl flex">Sarah</p>
+            <p className="font-bold text-xl flex">{user}</p>
             <Stars />
             <p className="text-xs">24 rue Mercier, Lyon, 69003</p>
           </div>
         </div>
         <div className="my-3 overflow-y-scroll">
-          <p className="font-bold text-xl">Arroser mes plantes</p>
+          <p className="font-bold text-xl">{title}</p>
           <p className="text-sm ">
             {
-              "Je pars en vacances, j'aurais besoin d'une personne pour s'occuper de mes plantes."
+              desc
             }
           </p>
         </div>
