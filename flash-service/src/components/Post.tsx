@@ -3,7 +3,6 @@ import { ProfileImg } from "./ProfileImg";
 import profile from "@/image/femme_profile.jpg";
 import { Stars } from "./Stars";
 import { PostImage } from "./PostImage";
-import { PostButton } from "./PostButton";
 import { PostFlashPoint } from "./PostFlashPoint";
 const Post: FC = () => {
   return (
@@ -30,7 +29,6 @@ const Post: FC = () => {
         </div>
         <div className="flex justify-between items-center m-1">
           <PostFlashPoint point="18"></PostFlashPoint>
-          <PostButton label="Accept Job"></PostButton>
         </div>
       </div>
     </div>

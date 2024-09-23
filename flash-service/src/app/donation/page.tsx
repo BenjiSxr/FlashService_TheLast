@@ -32,7 +32,7 @@ export default function Donation() {
   ];
   return (
     <>
-      <div className="p-5 space-y-8 overflow-y-scroll bg-gray-100">
+      <div className="flex flex-col items-center p-5 space-y-8 overflow-y-scroll bg-gray-100">
         {posts.map((p) => (
           <DonationPost
             key={p.id}

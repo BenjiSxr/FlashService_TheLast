@@ -8,12 +8,11 @@ const Connexion: React.FC = () => {
     const { login } = useAuth();
     const router = useRouter();
 
-    const handleLogin = (e: React.FormEvent) => {
+    const handleLogin = async (e: React.FormEvent) => {
         e.preventDefault();
 
-        if (email === "pbollero@isitech.fr" && password === "password") {
-            login();
-
+        const success = await login(email, password);
+        if (success) {
             router.push("/");
         } else {
             alert("Identifiants incorrects");

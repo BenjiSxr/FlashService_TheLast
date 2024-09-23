@@ -27,11 +27,15 @@ const DonationPost: FC<IProps> = (props) => {
   }, [current_fp, total_fp]);
 
   return (
-    <div className="flex flex-col justify-center items-center border-black border-2 rounded-md bg-white">
-      <div className="flex flex-col justify-center items-center w-[100%] h-[100%] p-2 max-w-96 overflow-hidden">
-        <img className="rounded" src={imageURL} alt="Photo Association" />
+    <div className="max-w-[500px] flex flex-col justify-center items-center border-black border-2 rounded-md bg-white">
+      <div className="flex flex-col justify-center items-center w-full h-[300px] overflow-hidden bg-black">
+        <img
+          className="w-full h-full object-cover rounded-t-md"
+          src={imageURL}
+          alt="Photo Association"
+        />
       </div>
-      <div className="w-full h-1/2 border-b-2 border-black z-0"></div>
+      <div className="w-full border-b-2 border-black z-0"></div>
       <div className=" w-full flex flex-col p-3">
         <div className="w-full flex flex-col justify-items-center">
           <div className="w-full flex justify-center items-center font-bold text-2xl">
@@ -47,12 +51,16 @@ const DonationPost: FC<IProps> = (props) => {
               className="h-full rounded-full transition-all duration-1000"
               style={{
                 background: `linear-gradient(45deg, #FBBF24, #16A34A)`, // Amber-200 et Green-600
-                boxShadow: '0 0 10px rgba(251, 191, 36, 0.3), 0 0 20px rgba(251, 191, 36, 0.3), 0 0 30px rgba(22, 163, 74, 0.3), 0 0 40px rgba(22, 163, 74, 0.3)',
-                width: `${progress}%`
+                boxShadow:
+                  "0 0 10px rgba(251, 191, 36, 0.3), 0 0 20px rgba(251, 191, 36, 0.3), 0 0 30px rgba(22, 163, 74, 0.3), 0 0 40px rgba(22, 163, 74, 0.3)",
+                width: `${progress}%`,
               }}
             ></div>
           </div>
           <DonationButton />
+        </div>
+        <div className="w-full text-center mt-2 text-gray-700">
+          {current_fp} / {total_fp} Flash Points
         </div>
       </div>
       <InfoButton />
