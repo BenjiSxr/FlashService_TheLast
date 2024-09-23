@@ -34,9 +34,9 @@ export function AuthProvider({ children }: Props) {
     adresse: "28 rue de la République",
   });
 
-  const login = async (email: string, password: string) => {
+  const login = (email: string, password: string) => {
     if (email === user.email && password === "test123") {
-      await setUser({
+      setUser({
         id: 1,
         firstName: "Jean",
         lastName: "Dupont",
