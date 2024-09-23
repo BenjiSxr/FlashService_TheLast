@@ -10,6 +10,7 @@ import { useState } from "react";
 export default function Home() {
   const { user } = useAuth();
   if (user.id === 0) {
+    console.log(user);
     redirect("/connexion");
   }
 

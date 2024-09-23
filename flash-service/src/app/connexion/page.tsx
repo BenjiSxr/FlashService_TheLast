@@ -1,7 +1,7 @@
 "use client";
-import React, { useState } from 'react';
-import { Connexion } from '@/components/Connexion';
-import { Inscription } from '@/components/Inscription';
+import React, { useState } from "react";
+import { Connexion } from "@/components/Connexion";
+import { Inscription } from "@/components/Inscription";
 
 const AuthScreen: React.FC = () => {
   const [isSignUp, setIsSignUp] = useState(false);
@@ -16,7 +16,9 @@ const AuthScreen: React.FC = () => {
         className="mt-6 text-white hover:underline"
         onClick={() => setIsSignUp(!isSignUp)}
       >
-        {isSignUp ? 'Déjà un compte ? Se connecter' : "Pas encore de compte ? S'inscrire"}
+        {isSignUp
+          ? "Déjà un compte ? Se connecter"
+          : "Pas encore de compte ? S'inscrire"}
       </button>
     </div>
   );

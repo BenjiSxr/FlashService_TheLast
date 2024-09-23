@@ -5,27 +5,16 @@ export default function Donation() {
     {
       id: 1,
       imageURL: "https://picsum.photos/350/175",
-      title: "La SPA",
-      description: `Bonjour, Monsieur. Permettez-moi de vous éclairer à ce sujet. L'ivoire est traditionnellement de couleur crème ou blanc cassé, avec parfois des nuances jaunâtres en fonction de son âge ou de son origine. Cette teinte douce est souvent associée à une élégance intemporelle.
-            Si vous avez d'autres questions, n'hésitez pas à me solliciter.`,
+      title: "la Société Protectrice des Animaux (SPA)",
+      description: `Grâce à ces contributions, la SPA peut financer les soins vétérinaires, l'alimentation, l'hébergement et la réhabilitation des animaux recueillis dans ses refuges. Les dons permettent également de mener des campagnes de sensibilisation et de soutenir des actions légales contre la maltraitance animale. Chaque geste compte pour améliorer la vie de milliers d'animaux en leur offrant une seconde chance.`,
       current_fp: 1000,
       total_fp: 3000,
     },
     {
       id: 2,
       imageURL: "https://picsum.photos/400/250",
-      title: "autre",
-      description: `Bonjour, Monsieur. Permettez-moi de vous éclairer à ce sujet. L'ivoire est traditionnellement de couleur crème ou blanc cassé, avec parfois des nuances jaunâtres en fonction de son âge ou de son origine. Cette teinte douce est souvent associée à une élégance intemporelle.
-            Si vous avez d'autres questions, n'hésitez pas à me solliciter.`,
-      current_fp: 44446,
-      total_fp: 50000,
-    },
-    {
-      id: 3,
-      imageURL: "https://picsum.photos/500/300",
-      title: "autre",
-      description: `Bonjour, Monsieur. Permettez-moi de vous éclairer à ce sujet. L'ivoire est traditionnellement de couleur crème ou blanc cassé, avec parfois des nuances jaunâtres en fonction de son âge ou de son origine. Cette teinte douce est souvent associée à une élégance intemporelle.
-            Si vous avez d'autres questions, n'hésitez pas à me solliciter.`,
+      title: "Les Restos du Cœur",
+      description: `Chaque contribution aide à distribuer des repas, offrir un hébergement d’urgence, ainsi que des services d’accompagnement social et d’insertion. Grâce à vos dons, des milliers de familles reçoivent un soutien indispensable pour améliorer leur quotidien et retrouver de l’espoir.`,
       current_fp: 44446,
       total_fp: 50000,
     },

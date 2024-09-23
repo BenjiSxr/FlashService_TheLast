@@ -4,6 +4,7 @@ import "./globals.css";
 import { DownBar } from "@/components/DownBar";
 import { HighBar } from "@/components/HighBar";
 import { AuthProvider } from "@/context/UserContext";
+import { FlashProvider } from "@/context/FlashContext";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -32,9 +33,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen overflow-y-scroll flex flex-col justify-between`}
       >
         <AuthProvider>
-          <HighBar></HighBar>
-          {children}
-          <DownBar></DownBar>
+          <FlashProvider>
+            <HighBar></HighBar>
+            {children}
+            <DownBar></DownBar>
+          </FlashProvider>
         </AuthProvider>
       </body>
     </html>
